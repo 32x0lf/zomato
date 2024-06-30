@@ -1,0 +1,12 @@
+{
+    "/api": {
+      "target": "https://freeapi.miniprojectideas.com/api/zomato",
+      "secure": false,
+      "changeOrigin": true,
+      "logLevel": "debug",
+      "pathRewrite": {
+        "^/api": ""
+      }
+    }
+  }
+  

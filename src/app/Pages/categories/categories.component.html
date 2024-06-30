@@ -1,0 +1,22 @@
+<h1 class="text-center mb-4">Food Items</h1>
+<div class="row row-cols-1 row-cols-md-6 g-4 mx-auto">
+    <div class="col m-3" *ngFor="let item of itemCategory">
+        <div class="flip-card" >
+                <div class="flip-card-inner">
+                    <div class="card-face front p-2">
+                        <div class="card" style="width: 18rem;">
+                           <img [src]="item.photoUrl" class="card-img-top img-fluid">
+                        </div>
+                    </div>
+                    <div class="card-face back p-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">{{item.categoryName}}</h5>
+                                <a href="#" class="btn btn-primary">See restaurant</a>
+                              </div>
+                        </div>
+                    </div> 
+                </div>
+        </div>  
+    </div>
+</div>
