@@ -1,1 +1,10 @@
-<p>restaurant-items works!</p>
+<div class="row row-cols-1 row-cols-md-6 row-cols-sm-6 mx-auto">
+    <div class="col m-3 m-sm-1" *ngFor="let item of foodData">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title text-align-start">{{item.menuItemName}}</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">{{item.restaurantName}}</h6>
+            </div>
+        </div>
+    </div>
+</div>  

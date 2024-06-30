@@ -7,7 +7,7 @@ import { LoginComponent } from './Pages/login/login.component';
 export const routes: Routes = [
     { path: '' ,redirectTo:'food-category',pathMatch:'full'},
     { path: 'food-category',component:CategoriesComponent},
-    { path: 'restaurant',component:RestaurantItemsComponent},
+    { path: 'restaurant/:id',component:RestaurantItemsComponent},
     { path: 'create-order',component:CreateOrderComponent},
     { path: 'login',component:LoginComponent}
 ];

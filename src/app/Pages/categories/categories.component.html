@@ -12,8 +12,8 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title">{{item.categoryName}}</h5>
-                                <a href="#" class="btn btn-primary">See restaurant</a>
-                              </div>
+                                <a class="btn btn-primary" [routerLink]="['/restaurant',item.categoryId]">See restaurant</a>
+                            </div>
                         </div>
                     </div> 
                 </div>
